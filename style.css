@@ -5,7 +5,7 @@
 }
 
 body {
-    color: white;
+    color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
 }
 
@@ -18,7 +18,11 @@ body {
 }
 
 .ctn-card {
-    padding: 35px 45px;
+    padding: 35px 55px;
+}
+
+.ctn-card img {
+    width: 55px;
 }
 
 .ctn-card button {
@@ -28,12 +32,80 @@ body {
     border-radius: 30px;
 }
 
+.ctn-card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+
+.ctn-card p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
 .card-1 {
     background: var(--Bright-orange);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
+.card-2 {
+    background: var(--Dark-cyan);
+}
+
+.card-3 {
+    background: var(--Very-dark-cyan);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 .card-1 button {
     color: var(--Bright-orange);
+}
+
+.card-2 button {
+    color: var(--Dark-cyan);
+}
+
+.card-3 button {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 1024px) {
+    .ctn-principal {
+        flex-direction: row;
+    }
+    .card-1 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+    .card-3 {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    .ctn-card p {
+        margin-bottom: 65px;
+    }
+    .ctn-principal {
+        width: 85%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0px;
+        height: 440px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1366px) {
+    .ctn-principal {
+        width: 66%;
+    }
+    .ctn-card button {
+        position: absolute;
+        bottom: 40px;
+    }
 }
