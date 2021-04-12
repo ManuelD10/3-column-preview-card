@@ -1,0 +1,39 @@
+:root {
+    --Bright-orange: #e38826;
+    --Dark-cyan: #006970;
+    --Very-dark-cyan: #004241;
+}
+
+body {
+    color: white;
+    font-size: 15px;
+}
+
+.ctn-principal {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ctn-card {
+    padding: 35px 45px;
+}
+
+.ctn-card button {
+    background: white;
+    border: 0px;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.card-1 {
+    background: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-1 button {
+    color: var(--Bright-orange);
+}
